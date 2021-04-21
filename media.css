@@ -1,0 +1,87 @@
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px) {
+    section {
+      
+        padding: 0 3%;
+        padding-top: 7.5rem;
+    }
+}
+
+@media (max-width:768px) {
+    header label {
+        visibility: visible;
+        opacity: 1;
+    }
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding:1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, 2);
+        box-shadow: 0 .5rem 1rem rgba(0,0, 0, 1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .2s linear ;
+    }
+    header .navbar a {
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+    }
+    header input:checked ~ .navbar {
+        transform: scaleY(1);
+        opacity: 1;
+      
+    }
+    header input:checked ~ label::before{
+         content: 'x';
+
+    }
+    .home{
+        flex-flow: column-reverse;
+    }
+    .home .image img {
+        width: 100%;
+    }
+    .home .content h3{
+        font-size: 3.6rem;
+    }
+    .home .content p{
+        font-size: 1.5rem;
+    }
+    .about {
+        background-position: right;
+    }
+    .newsletter p{
+        width: auto;
+    }
+    .review .box-container {
+        margin-top: 0;
+    }
+    .heading{
+        margin-top: 0;
+    }
+    .features .box-container {
+        margin-top: 0;
+    }
+}
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .about .column .content .buttons a{
+        width: 100%;
+        text-align: center;
+    }
+    .about .column .content .buttons a:last-child{
+        margin: 1rem 0;
+    }
+}
